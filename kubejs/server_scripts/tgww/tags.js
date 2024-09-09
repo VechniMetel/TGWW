@@ -1,0 +1,11 @@
+ServerEvents.tags('item',e => {
+  e.add('tgww:flammable_fluid','immersiveengineering:creosote_bucket')
+  e.add('tgww:flammable_fluid','immersiveengineering:plantoil_bucket')
+  e.add('tgww:flammable_fluid','immersiveengineering:ethanol_bucket')
+  e.add('tgww:flammable_fluid','immersiveengineering:biodiesel_bucket')
+  e.add('tgww:flammable_fluid','immersivepetroleum:diesel_bucket')
+  e.add('tgww:flammable_fluid','immersivepetroleum:gasoline_bucket')
+  e.add('tgww:flammable_fluid','immersivepetroleum:napalm_bucket')
+  e.add('tgww:flammable_fluid','createaddition:seed_oil_bucket')
+  e.add('tgww:flammable_fluid','createaddition:bioethanol_bucket')
+})
