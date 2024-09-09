@@ -22,4 +22,6 @@ ServerEvents.recipes(r =>{
   r.recipes.create.deploying('minecraft:end_stone',['minecraft:sandstone','minecraft:popped_chorus_fruit'])
   r.recipes.create.mixing('minecraft:ghast_tear',['minecraft:warped_fungus','create_netherless:ectoplasm',
     Fluid.water(1000)])
+    r.replaceInput({output:'create_netherless:netherite_fragment'},
+    'minecraft:blackstone','minecraft:gilded_blackstone')
   })
