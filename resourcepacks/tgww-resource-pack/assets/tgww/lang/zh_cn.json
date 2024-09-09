@@ -1,0 +1,18 @@
+{
+  "item.tgww.sub_caliber_ap_shell": "次口径穿甲弹壳",
+  "item.tgww.sub_caliber_ap_shell_with_gunpowder": "安装了火药的次口径穿甲弹壳",
+  "item.tgww.sub_caliber_ap_discarded_bullet_not_sealed": "未密封的次口径脱壳穿甲弹",
+  "item.tgww.flange_ap_shell": "凸缘穿甲弹壳",
+  "item.tgww.flange_ap_shell_with_gunpowder": "安装了火药的凸缘穿甲弹壳",
+  "item.tgww.flange_blunt_ap_discarded_bullet_not_sealed": "未密封的凸缘钝头穿甲弹",
+  "item.tgww.pneumatic_pistol_shell": "气动手枪弹壳",
+  "item.tgww.pneumatic_pistol_shell_with_gunpowder": "安装了火药的气动手枪弹壳",
+  "item.tgww.pneumatic_pistol_bullet_not_sealed": "未密封的气动手枪弹",
+  "item.tgww.sub_caliber_ap_warhead": "次口径穿甲弹头",
+  "item.tgww.sub_caliber_ap_warhead_incomplete": "次口径穿甲弹头（未完成版）",
+  "item.tgww.blunt_ap_warhead": "钝头穿甲弹头",
+  "item.tgww.blunt_ap_warhead_incomplete": "钝头穿甲弹头（未完成版）",
+  "item.tgww.pneumatic_pistol_warhead": "气动手枪弹头",
+  "item.tgww.pneumatic_pistol_warhead_incomplete": "气动手枪弹头（未完成版）",
+  "desc.immersiveengineering.info.blueprint.tgww": "天工万物"
+}
