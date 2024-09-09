@@ -393,3 +393,7 @@ ServerEvents.tags('item',e => {
   e.add('tgww:flammable_fluid','createaddition:seed_oil_bucket')
   e.add('tgww:flammable_fluid','createaddition:bioethanol_bucket')
 })
+
+ServerEvents.tags('block',e => {
+  e.remove('create:safe_nbt','create_clipboard')
+})
