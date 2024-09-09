@@ -5,7 +5,7 @@ ServerEvents.recipes(e => {
     inputs: [
       {base_ingredient:{item:'immersiveengineering:electron_tube'},count:3},
       {tag:'forge:plates/steel'}
-    ],result: Item.of('tacz:ammo',30,'{AmmoId:"immersive_armorer:burst_capacitor"}').toJson()
+    ],result: Item.of('tacz:ammo',30,'{AmmoId:"immersive_armorer:burst_capacitor"}')
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
@@ -14,7 +14,7 @@ ServerEvents.recipes(e => {
       {base_ingredient:{item:'immersiveengineering:electron_tube'},count:6},
       {base_ingredient:{tag:'forge:dusts/redstone'},count:3},
       {base_ingredient:{tag:'forge:plates/steel'},count:2}
-    ],result: Item.of('tacz:ammo',20,'{AmmoId:"immersive_armorer:stream_capacitor"}').toJson()
+    ],result: Item.of('tacz:ammo',20,'{AmmoId:"immersive_armorer:stream_capacitor"}')
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
@@ -24,7 +24,7 @@ ServerEvents.recipes(e => {
       {base_ingredient:{tag:'forge:dusts/redstone'},count:6},
       {base_ingredient:{tag:'forge:plates/steel'},count:3},
       {base_ingredient:{tag:'forge:gems/quartz'},count:2}
-    ],result: Item.of('tacz:ammo',15,'{AmmoId:"immersive_armorer:high_power_capacitor"}').toJson()
+    ],result: Item.of('tacz:ammo',15,'{AmmoId:"immersive_armorer:high_power_capacitor"}')
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
