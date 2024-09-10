@@ -1,7 +1,19 @@
 ServerEvents.recipes(e => {
-  e.shapeless(Item.of('immersiveengineering:blueprint','{blueprint:"tgww"}'),[
+  e.shapeless(Item.of('immersiveengineering:blueprint','{blueprint:"tgww_guns"}'),[
+    'immersiveengineering:gunpart_barrel',
+    'immersiveengineering:gunpart_hammer',
+    'minecraft:paper',
+    '#forge:dyes/blue'
+  ])
+  e.shapeless(Item.of('immersiveengineering:blueprint','{blueprint:"tgww_ammo"}'),[
     '#forge:gunpowder',
     'immersiveengineering:empty_casing',
+    'minecraft:paper',
+    '#forge:dyes/blue'
+  ])
+  e.shapeless(Item.of('immersiveengineering:blueprint','{blueprint:"tgww_addons"}'),[
+    '#forge:leather',
+    '#forge:rods/iron',
     'minecraft:paper',
     '#forge:dyes/blue'
   ])

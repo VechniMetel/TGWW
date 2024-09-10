@@ -1,7 +1,7 @@
 ServerEvents.recipes(e => {
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_guns',
     inputs:[
       {base_ingredient:{item:'immersiveengineering:component_iron'},count:2},
       {base_ingredient:{tag:'forge:treated_wood'},count:4},
@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_guns',
     inputs:[
       {base_ingredient:{item:'immersiveengineering:component_steel'},count:3},
       {item:'immersiveengineering:wooden_grip'},
@@ -25,7 +25,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_guns',
     inputs:[
       {item:'immersiveengineering:revolver'},
       {base_ingredient:{tag:'forge:plates/steel'},count:3},
@@ -36,7 +36,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_guns',
     inputs:[
       {item:'immersiveengineering:railgun'},
       {base_ingredient:{tag:'forge:dusts/redstone'},count:16},
@@ -48,7 +48,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_guns',
     inputs:[
       {base_ingredient:{tag:'forge:wires/electrum'},count:8},
       {item:'immersiveengineering:wooden_grip'},
@@ -59,7 +59,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_guns',
     inputs:[
       {base_ingredient:{tag:'forge:wires/electrum'},count:16},
       {item:'immersiveengineering:gunpart_barrel'},
@@ -71,7 +71,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_guns',
     inputs:[
       {base_ingredient:{tag:'forge:wires/electrum'},count:16},
       {item:'immersiveengineering:toolupgrade_revolver_electro'},
@@ -83,7 +83,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_guns',
     inputs:[
       {base_ingredient:{tag:'forge:wires/steel'},count:8},
       {base_ingredient:{item:'immersiveengineering:electron_tube'},count:6},
@@ -95,7 +95,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_guns',
     inputs:[
       {item:'immersiveengineering:gunpart_barrel'},
       {item:'immersiveengineering:gunpart_hammer'},
