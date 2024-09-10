@@ -9,4 +9,19 @@ ServerEvents.recipes(e => {
     'x':'lightmanscurrency:coin_copper',
     'z':'minecraft:quartz'
   })
+  e.recipes.create.compacting(['lightmanscurrency:coin_chocolate_iron',
+    'lightmanscurrency:coin_iron'],['lightmanscurrency:coin_iron',
+      'create:bar_of_chocolate'])
+  e.recipes.create.compacting(['lightmanscurrency:coin_chocolate_gold',
+    'lightmanscurrency:coin_gold'],['lightmanscurrency:coin_gold',
+      'create:bar_of_chocolate'])
+  e.recipes.create.compacting(['lightmanscurrency:coin_chocolate_emerald',
+    'lightmanscurrency:coin_emerald'],['lightmanscurrency:coin_emerald',
+      'create:bar_of_chocolate'])
+  e.recipes.create.compacting(['lightmanscurrency:coin_chocolate_diamond',
+    'lightmanscurrency:coin_diamond'],['lightmanscurrency:coin_diamond',
+      'create:bar_of_chocolate'])
+  e.recipes.create.compacting(['lightmanscurrency:coin_chocolate_netherite',
+    'lightmanscurrency:coin_netherite'],['lightmanscurrency:coin_netherite',
+      'create:bar_of_chocolate'])
 })
