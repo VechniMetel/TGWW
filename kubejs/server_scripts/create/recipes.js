@@ -24,4 +24,10 @@ ServerEvents.recipes(r =>{
     Fluid.water(1000)])
     r.replaceInput({output:'create_netherless:netherite_fragment'},
     'minecraft:blackstone','minecraft:gilded_blackstone')
+   r.recipes.create.deploying('farmersdelight:rich_soil',
+    ['farmersdelight:organic_compost','#minecraft:hoes']
+  ).damageIngredient({tag:'minecraft:hoes'},2)
+  r.recipes.create.deploying('minecraft:skeleton_skull',
+    ['minecraft:bone_block','#forge:tools/knives']
+  ).damageIngredient({tag:'forge:tools/knives'},2)
   })
