@@ -1,6 +1,5 @@
 ServerEvents.recipes(e => {
   let inter = 'tgww:sub_caliber_ap_warhead_incomplete'
-  e.remove({output:'tacz:ammo'})
   e.recipes.create.sequenced_assembly(
     'tgww:sub_caliber_ap_warhead',
     '#forge:plates/copper',[
