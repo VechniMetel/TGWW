@@ -6,4 +6,13 @@ r.shapeless(Item.of('minecraft:red_mushroom',2),
 r.shapeless(Item.of('minecraft:brown_mushroom',2),
 ['minecraft:mud','minecraft:shears','minecraft:sugar']
 ).damageIngredient({item:'minecraft:shears'},2)
+r.shaped('twilightforest:deer_spawn_egg',[
+    "aba",
+    "bcb",
+    "aba"
+],{
+    'a':'twilightforest:raw_venison',
+    'b':'minecraft:bone',
+    'c':'minecraft:ghast_tear'
+})
 })
