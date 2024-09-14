@@ -20,6 +20,6 @@ StartupEvents.registry('item', e => {
   createTGWWItem('pneumatic_pistol_shell')
   e.create('tgww:pneumatic_pistol_shell_with_gunpowder').texture('tgww:item/pneumatic_pistol_shell')
   createTGWWItem('pneumatic_pistol_bullet_not_sealed')
-  e.create('tgww:birthday_0')
+  e.create('tgww:birthday_0').maxStackSize(1)
   e.create('tgww:incomplete_luguan_ammo')
 })
