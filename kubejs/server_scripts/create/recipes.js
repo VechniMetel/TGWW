@@ -30,4 +30,17 @@ ServerEvents.recipes(r =>{
   r.recipes.create.deploying('minecraft:skeleton_skull',
     ['minecraft:bone_block','#forge:tools/knives']
   ).damageIngredient({tag:'forge:tools/knives'},2)
+  r.remove({output:'protection_pixel:maneuveringwing'})
+  r.recipes.create.mechanical_crafting('protection_pixel:maneuveringwing',[
+    'ab ba',
+    'cdedc',
+    'af fa'
+  ],{
+    a:'#forge:plates/zinc',
+    b:'create:cogwheel',
+    c:'#forge:fabric_hemp',
+    d:'create_dd:kinetic_mechanism',
+    e:'immersiveengineering:glider',
+    f:'create_sa:fan_component'
+  })
   })
