@@ -15,4 +15,17 @@ r.shaped('twilightforest:deer_spawn_egg',[
     'b':'minecraft:bone',
     'c':'minecraft:ghast_tear'
 })
+r.shapeless('xkdeco:mechanical_item_display',
+[
+   'xkdeco:plain_item_display', 'create:brass_casing'
+])
+r.shapeless('xkdeco:gorgeous_item_display',[
+    'xkdeco:plain_item_display','minecraft:red_carpet','minecraft:dark_oak_log'
+    ])
+r.shapeless('xkdeco:gorgeous_block_display',[
+    'xkdeco:plain_block_display','minecraft:red_carpet','minecraft:dark_oak_log'
+])
+r.shapeless('xkdeco:mechanical_block_display',[
+    'create:brass_casing','xkdeco:plain_block_display'
+])
 })
