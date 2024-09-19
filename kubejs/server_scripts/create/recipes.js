@@ -43,4 +43,5 @@ ServerEvents.recipes(r =>{
     e:'immersiveengineering:glider',
     f:'create_sa:fan_component'
   })
+  r.remove({output:Item.of('minecraft:potion', '{Potion:"parcool:energy_drink"}')})
   })
