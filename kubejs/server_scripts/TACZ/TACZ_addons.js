@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(r=>{
     r.remove({output:'tacz:gun_smith_table'})
     r.shaped(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:scope_telephoto"}'),[
