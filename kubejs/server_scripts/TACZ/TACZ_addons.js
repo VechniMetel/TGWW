@@ -90,7 +90,7 @@ ServerEvents.recipes(r=>{
     ['#forge:plates/iron','#forge:plates/iron'])
     r.custom({
         type: 'immersiveengineering:blueprint',
-        category: 'tgww',
+        category: 'tgww_addons',
         inputs: [
           {tag:'forge:rods/steel'},
           {tag:'forge:plates/steel'}
@@ -98,7 +98,7 @@ ServerEvents.recipes(r=>{
       })
       r.custom({
         type: 'immersiveengineering:blueprint',
-        category: 'tgww',
+        category: 'tgww_addons',
         inputs: [
           {tag:'forge:rods/steel'},
           {tag:'forge:treated_wood_slab'}
@@ -106,7 +106,7 @@ ServerEvents.recipes(r=>{
       })
       r.custom({
         type: 'immersiveengineering:blueprint',
-        category: 'tgww',
+        category: 'tgww_addons',
         inputs: [
           {tag:'forge:rods/aluminum'},
           {tag:'forge:plates/aluminum'}
@@ -114,7 +114,7 @@ ServerEvents.recipes(r=>{
       })
       r.custom({
         type: 'immersiveengineering:blueprint',
-        category: 'tgww',
+        category: 'tgww_addons',
         inputs: [
           {item:'immersiveengineering:stick_treated'},
           {tag:'forge:treated_wood_slab'}
@@ -122,7 +122,7 @@ ServerEvents.recipes(r=>{
       })
       r.custom({
         type: 'immersiveengineering:blueprint',
-        category: 'tgww',
+        category: 'tgww_addons',
         inputs: [
           {item:'immersiveengineering:stick_treated'},
           {tag:'forge:treated_wood_slab'},

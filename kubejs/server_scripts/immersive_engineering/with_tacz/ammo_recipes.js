@@ -1,7 +1,7 @@
 ServerEvents.recipes(e => {
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_ammo',
     inputs: [
       {base_ingredient:{item:'immersiveengineering:electron_tube'},count:3},
       {tag:'forge:plates/steel'}
@@ -9,7 +9,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_ammo',
     inputs:[
       {base_ingredient:{item:'immersiveengineering:electron_tube'},count:6},
       {base_ingredient:{tag:'forge:dusts/redstone'},count:3},
@@ -18,7 +18,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_ammo',
     inputs:[
       {base_ingredient:{item:'immersiveengineering:electron_tube'},count:9},
       {base_ingredient:{tag:'forge:dusts/redstone'},count:6},
@@ -28,7 +28,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_ammo',
     inputs:[
       {base_ingredient:{tag:'forge:nuggets/steel'},count:12},
       {base_ingredient:{tag:'forge:nuggets/lead'},count:6},
@@ -47,7 +47,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_ammo',
     inputs:[
       {base_ingredient:{tag:'forge:nuggets/iron'},count:6},
       {base_ingredient:{tag:'forge:nuggets/lead'},count:6},
@@ -57,7 +57,7 @@ ServerEvents.recipes(e => {
   })
   e.custom({
     type: 'immersiveengineering:blueprint',
-    category: 'tgww',
+    category: 'tgww_ammo',
     inputs:[
       {tag:'forge:rods/steel'},
       {base_ingredient:{tag:'forge:nuggets/steel'},count:2}
