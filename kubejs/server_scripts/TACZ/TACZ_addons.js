@@ -240,4 +240,56 @@ ServerEvents.recipes(r=>{
     ['#forge:plates/steel','immersiveengineering:component_electronic'])
     r.recipes.create.deploying(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:extended_capacitor_3"}'),
     ['#forge:plates/steel','immersiveengineering:component_electronic_adv'])
+    r.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_melted_metal_spitter"}'),[
+    ' a ',
+    'bcd',
+    ' a '
+],{
+    'a':'#forge:plates/steel',
+    'b':'#forge:plates/lead',
+    'c':'createbigcannons:molten_steel_bucket',
+    'd':'immersiveengineering:nugget_steel'
+}).replaceIngredient({item:'createbigcannons:molten_steel_bucket'},'minecraft:bucket')
+r.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_he_compound"}'),[
+    ' ad',
+    'bcd',
+    ' ad'
+],{
+    'a':'#forge:plates/steel',
+    'b':'#forge:plates/lead',
+    'c':'minecraft:tnt',
+    'd':'immersiveengineering:nugget_steel'
+})
+r.recipes.create.deploying(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_focused_nozzle"}'),
+    ['immersiveengineering:fluid_pipe','#forge:plates/steel'])
+r.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_face_melter"}'),[
+    'a b',
+    ' bc',
+    '  b'
+],{
+    'a':'immersiveengineering:fluid_pipe',
+    'b':'immersiveengineering:plate_steel',
+    'c':'createdieselgenerators:lighter'
+})
+r.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_refit_fuel_stream_diffuser"}'),[
+    ' bb',
+    ' ca',
+    ' bb'
+],{
+    'a':'immersiveengineering:fluid_pipe',
+    'b':'immersiveengineering:plate_steel',
+    'c':'minecraft:iron_bars'
+})
+r.shaped(Item.of('tacz:modern_kinetic_gun', '{GunId:"gsl_mystery_gun_pack:villager_gun"}'),[
+    'abc',
+    'def',
+    ' d '
+],{
+    'a':'immersiveengineering:gunpart_barrel',
+    'b':'#forge:rods/steel',
+    'c':'#forge:ingots/steel',
+    'd':'#forge:plates/steel',
+    'e':'easy_villagers:villager',
+    'f':'immersiveengineering:gunpart_hammer'
+})
     })

@@ -241,4 +241,5 @@ ServerEvents.recipes(r => {
       .drill('createoreexcavation:diamond_drill')
       .stress(512)
       .fluid('minecraft:water 20') 
+  r.recipes.create.crushing('create:crushed_raw_iron','easy_villagers:villager')
 })

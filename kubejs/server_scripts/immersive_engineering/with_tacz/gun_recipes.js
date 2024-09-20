@@ -105,4 +105,27 @@ ServerEvents.recipes(e => {
       {base_ingredient:{tag:'forge:wires/steel'},count:8}
     ],result: Item.of('tacz:modern_kinetic_gun','{GunId:"immersive_armorer:standard_rail_smg_mk1"}')
   })
+  e.custom({
+    type: 'immersiveengineering:blueprint',
+    category: 'tgww_guns',
+    inputs:[
+      {item:'immersiveengineering:chemthrower'},
+      {base_ingredient:{item:'immersiveengineering:fluid_pipe'},count:2},
+      {item:'immersiveengineering:gunpart_hammer'},
+      {base_ingredient:{item:'immersiveengineering:wooden_grip'},count:2},
+      {base_ingredient:{tag:'forge:plates/steel'},count:8},
+    ],result: Item.of('tacz:modern_kinetic_gun', '{GunId:"immersive_armorer:chemical_thrower"}')
+  })
+  e.custom({
+    type: 'immersiveengineering:blueprint',
+    category: 'tgww_guns',
+    inputs:[
+      {item:'immersiveengineering:gunpart_barrel'},
+      {item:'immersiveengineering:gunpart_hammer'},
+      {item:'immersiveengineering:heavy_engineering'},
+      {item:'immersiveengineering:wooden_grip'},
+      {base_ingredient:{tag:'forge:nuggets/steel'},count:8},
+      {base_ingredient:{tag:'forge:plates/steel'},count:8}
+    ],result: Item.of('tacz:modern_kinetic_gun', '{GunId:"immersive_armorer:pistol_9mm"}')
+  })
 })
