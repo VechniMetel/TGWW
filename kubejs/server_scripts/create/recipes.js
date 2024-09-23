@@ -136,7 +136,7 @@ ServerEvents.recipes(r => {
       }
     ],
     "result": {
-      "item": "minecraft:obsidian"
+      "item": "minecraft:magma_block"
     }
   })
   r.custom({
@@ -241,5 +241,50 @@ ServerEvents.recipes(r => {
       .drill('createoreexcavation:diamond_drill')
       .stress(512)
       .fluid('minecraft:water 20') 
-  r.recipes.create.crushing('create:crushed_raw_iron','easy_villagers:villager')
+  r.recipes.create.crushing(["2x minecraft:bone_meal","3x tgww:mysterious_flesh"],'easy_villagers:villager')
+  const x = 'tgww:incomplete_totem'
+
+  r.recipes.create.sequenced_assembly(
+    [
+      'minecraft:totem_of_undying'
+    ],
+    'minecraft:paper',
+    [
+      r.recipes.create.pressing(x,x),
+      r.recipes.create.deploying(x,[x,'minecraft:emerald']),
+      r.recipes.create.filling(x,[x,Fluid.of(
+        'create_enchantment_industry:hyper_experience',5)]),
+      r.recipes.create.pressing(x,x)
+    ]
+  )
+  .transitionalItem(x)
+  .loops(3)
+  const sm = 'tgww:incomplete_col'
+
+    r.recipes.create.sequenced_assembly(
+        [
+            Item.of('twilightforest:charm_of_life_1')
+        ],
+        '#minecraft:planks',
+        [
+            r.recipes.create.filling(sm,[sm,Fluid.of('create:potion',100,'{Bottle: "REGULAR",Potion: "minecraft:regeneration"}')]),
+            r.recipes.create.cutting(sm,sm)
+        ]
+    )
+    .transitionalItem(sm)
+    .loops(2)
+  const bg = 'tgww:incomplete_cok'
+    r.recipes.create.sequenced_assembly(
+        [
+            Item.of('twilightforest:charm_of_keeping_1')
+        ],
+        '#minecraft:planks',
+        [
+            r.recipes.create.pressing(bg,bg),
+            r.recipes.create.deploying(bg,[bg,'minecraft:ender_pearl']),
+            r.recipes.create.pressing(bg,bg)
+        ]
+    )
+    .transitionalItem(bg)
+    .loops(2)
 })

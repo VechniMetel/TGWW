@@ -111,15 +111,4 @@ ServerEvents.recipes(e => {
     k:'create_dd:kinetic_mechanism',
     l:'createdieselgenerators:kelp_handle'
   })
-  e.recipes.create.mechanical_crafting(Item.of('tacz:modern_kinetic_gun', '{GunId:"gsl_mystery_gun_pack:luguan"}'),[
-    ' aa  ',
-    'bccd ',
-    ' aae ',
-  ],{
-    a:'#forge:plates/plastic',
-    b:'twilightforest:deer_spawn_egg',
-    c:'create:fluid_pipe',
-    d:'createbigcannons:packed_gunpowder',
-    e:'create:copper_backtank'
-  })
 })

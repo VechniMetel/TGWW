@@ -1016,5 +1016,10 @@
   "item.tgww.birthday_0":"生日糖果",
   "item.create_dd.industrial_casing":"工业机壳",
   "item.tgww.incomplete_luguan_ammo":"未完成的鹿管子弹",
-  "item.tgww.press_w_to_ponder":"按住W开始思索"
+  "item.tgww.press_w_to_ponder":"按住W开始思索",
+  "item.tgww.incomplete_totem":"未完成的不死图腾",
+  "item.tgww.mysterious_flesh":"希望肉",
+  "item.tgww.cooked_mysterious_meat":"熟希望肉",
+  "item.tgww.incomplete_col":"未完成的生命护符",
+  "item.tgww.incomplete_cok":"未完成的保管护符"
 }

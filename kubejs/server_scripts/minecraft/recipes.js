@@ -28,4 +28,6 @@ r.shapeless('xkdeco:gorgeous_block_display',[
 r.shapeless('xkdeco:mechanical_block_display',[
     'create:brass_casing','xkdeco:plain_block_display'
 ])
+r.smelting('tgww:cooked_mysterious_meat','tgww:mysterious_flesh',0,20*5)
+r.smoking('tgww:cooked_mysterious_meat','tgww:mysterious_flesh',0,20*5)
 })

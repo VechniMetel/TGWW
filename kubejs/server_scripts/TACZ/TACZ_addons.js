@@ -280,16 +280,4 @@ r.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_ref
     'b':'immersiveengineering:plate_steel',
     'c':'minecraft:iron_bars'
 })
-r.shaped(Item.of('tacz:modern_kinetic_gun', '{GunId:"gsl_mystery_gun_pack:villager_gun"}'),[
-    'abc',
-    'def',
-    ' d '
-],{
-    'a':'immersiveengineering:gunpart_barrel',
-    'b':'#forge:rods/steel',
-    'c':'#forge:ingots/steel',
-    'd':'#forge:plates/steel',
-    'e':'easy_villagers:villager',
-    'f':'immersiveengineering:gunpart_hammer'
-})
     })

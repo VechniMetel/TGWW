@@ -53,20 +53,4 @@ ServerEvents.recipes(e => {
     Item.of('tacz:ammo',2,'{AmmoId:"create_armorer:rbapb"}').withChance(0.95),
     Item.of('tgww:flange_blunt_ap_discarded_bullet_not_sealed').withChance(0.05)
   ],'tgww:flange_blunt_ap_discarded_bullet_not_sealed')
-  const r = 'tgww:incomplete_luguan_ammo'
-
-  e.recipes.create.sequenced_assembly(
-    [
-      Item.of('tacz:ammo', '{AmmoId:"tacz:rpg_rocket"}').withChance(0.5),
-      Item.of('twilightforest:raw_venison').withChance(0.5)
-    ],
-    'twilightforest:deer_spawn_egg',
-    [
-      e.recipes.create.cutting(r,r),
-      e.recipes.create.deploying(r,[r,'createbigcannons:packed_gunpowder']),
-      e.recipes.create.deploying(r,[r,'createbigcannons:packed_gunpowder']),
-      e.recipes.create.deploying(r,[r,'minecraft:ghast_tear'])
-    ]
-  )
-  .transitionalItem(r)
 })
