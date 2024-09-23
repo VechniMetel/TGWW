@@ -287,4 +287,11 @@ ServerEvents.recipes(r => {
     )
     .transitionalItem(bg)
     .loops(2)
+  r.shaped('create_dd:black_asphalt_block',[
+    "aa ",
+    "aa ",
+    "   "
+  ],{
+    'a':'#forge:bitumen'
+  })
 })

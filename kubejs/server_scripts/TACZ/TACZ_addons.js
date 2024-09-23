@@ -280,4 +280,13 @@ r.shaped(Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:muzzle_ref
     'b':'immersiveengineering:plate_steel',
     'c':'minecraft:iron_bars'
 })
+r.shaped(Item.of('tacz:ammo', 4, '{AmmoId:"tacz:12g"}'),[
+    'aaa',
+    'aba',
+    'cbc'
+],{
+    'a':'minecraft:iron_nugget',
+    'b':'minecraft:gunpowder',
+    'c':'#forge:plates/brass'
+})
     })
