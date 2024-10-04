@@ -20,8 +20,8 @@ ServerEvents.recipes(r => {
     "#minecraft:coals")
   r.recipes.create.milling('crockpot:blackstone_dust', 'minecraft:blackstone')
   r.recipes.create.deploying('minecraft:end_stone', ['minecraft:sandstone', 'minecraft:popped_chorus_fruit'])
-  r.recipes.create.mixing('minecraft:ghast_tear', ['minecraft:warped_fungus', 'create_netherless:ectoplasm',
-    Fluid.water(1000)])
+  r.recipes.create.mixing('minecraft:ghast_tear', [Fluid.of('butchercraft:blood_fluid', 500), 
+    'create_netherless:ectoplasm',Fluid.water(500)])
   r.replaceInput({ output: 'create_netherless:netherite_fragment' },
     'minecraft:blackstone', 'minecraft:gilded_blackstone')
   r.recipes.create.filling('farmersdelight:rich_soil',
@@ -287,11 +287,51 @@ ServerEvents.recipes(r => {
     )
     .transitionalItem(bg)
     .loops(2)
-  r.shaped('create_dd:black_asphalt_block',[
-    "aa ",
-    "aa ",
-    "   "
-  ],{
-    'a':'#forge:bitumen'
-  })
+    r.shaped('create_dd:black_asphalt_block',[
+      "aa ",
+      "aa ",
+      "   "
+    ],{
+      'a':'#forge:bitumen'
+    })
+    r.recipes.create.splashing(['minecraft:mud',Item.of('minecraft:bamboo').withChance(0.1)],'minecraft:dirt')
+    r.recipes.create.deploying('legendarysurvivaloverhaul:ice_fern',['minecraft:fern','minecraft:snowball'])
+    r.recipes.create.deploying('legendarysurvivaloverhaul:sun_fern',['minecraft:fern','minecraft:flint_and_steel'])
+    .damageIngredient({item:'minecraft:flint_and_steel'},1)
+    r.remove({input:'create_netherless:coal_rod'})
+    const f ="create_netherless:incomplete_blaze_rod"
+    r.recipes.create.sequenced_assembly(
+      [
+          'minecraft:blaze_rod'
+      ],
+      'create_netherless:coal_rod',
+      [
+        r.recipes.create.filling(f,[f,Fluid.of('minecraft:lava',1000)]),
+        r.recipes.create.pressing(f,f),
+        r.recipes.create.pressing(f,f)
+      ]
+  )
+  .transitionalItem(f)
+  .loops(1)
+  r.recipes.create.deploying('minecraft:dragon_breath',
+    ['minecraft:experience_bottle', 'minecraft:shulker_shell'])
+    r.replaceInput({input:'minecraft:diamond_hoe'},'minecraft:diamond_hoe','create_sa:brass_hoe')
+    r.replaceInput({input:'minecraft:diamond_pickaxe'},'minecraft:diamond_pickaxe','create_sa:brass_pickaxe')
+    r.replaceInput({input:'minecraft:diamond_axe'},'minecraft:diamond_axe','create_sa:brass_axe')
+    r.replaceInput({input:'minecraft:diamond_shovel'},'minecraft:diamond_shovel','create_sa:brass_shovel')
+    r.replaceInput({input:'minecraft:golden_sword'},'minecraft:golden_sword','create_sa:experience_sword')
+    r.recipes.create.mixing([Fluid.of('tgww:clean_water',1000),'minecraft:charcoal'],
+      [Fluid.of('minecraft:water',1000),'minecraft:charcoal'])
+    r.recipes.create.filling('legendarysurvivaloverhaul:water_plant_bag',
+      ['legendarysurvivaloverhaul:water_plant_seeds',Fluid.of('tgww:clean_water',100)]
+    )
+    r.recipes.create.filling(Item.of('legendarysurvivaloverhaul:canteen', '{"legendarysurvivaloverhaul:HydrationCapacity":10,"legendarysurvivaloverhaul:HydrationPurity":"purified"}'),
+      ['legendarysurvivaloverhaul:canteen',Fluid.of('tgww:clean_water',500)]
+    )
+    r.recipes.create.filling(Item.of('legendarysurvivaloverhaul:large_canteen', '{"legendarysurvivaloverhaul:HydrationCapacity":20,"legendarysurvivaloverhaul:HydrationPurity":"purified"}'),
+      ['legendarysurvivaloverhaul:large_canteen',Fluid.of('tgww:clean_water',1000)]
+    )
+    r.recipes.create.filling('legendarysurvivaloverhaul:purified_water_bottle',
+      ['minecraft:glass_bottle',Fluid.of('tgww:clean_water',250)]
+    )
 })

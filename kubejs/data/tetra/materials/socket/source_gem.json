@@ -1,0 +1,24 @@
+{
+    "key":"socket_source_gem",
+"hidden":true,
+"category":"socket",
+"primary":2,
+"secondary":0,
+"tertiary":0,
+"durability":60,
+"integrityCost":2,
+"integrityGain":0,
+"magicCapacity":0,
+"toolLevel":0,
+"toolEfficiency":8,
+"attributes":{"forge:reach_distance":1.0,
+"forge:attack_range":2.5},
+"effects":{
+    "reaching":[20,0.45],
+    "crushing":2
+},
+"tints":{"glyph":"bd9cf6","texture":"bd9cf6"},
+"textures":["shiny","crude"],
+"experienceCost":4,
+"material":{"items":["ars_nouveau:source_gem"]}
+}

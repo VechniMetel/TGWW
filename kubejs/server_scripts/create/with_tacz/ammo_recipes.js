@@ -3,15 +3,15 @@ ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     'tgww:sub_caliber_ap_warhead',
     '#forge:plates/copper',[
-      e.recipes.createCutting(inter,inter),
-      e.recipes.createDeploying(inter,[inter,'#forge:nuggets/iron'])
+      e.recipes.createDeploying(inter,[inter,'#forge:nuggets/iron']),
+      e.recipes.createCutting(inter,inter)
   ]).transitionalItem(inter).loops(1)
   inter = 'tgww:blunt_ap_warhead_incomplete'
   e.recipes.create.sequenced_assembly(
     'tgww:blunt_ap_warhead',
     '#forge:plates/copper',[
-      e.recipes.createCutting(inter,inter),
-      e.recipes.createDeploying(inter,[inter,'#forge:nuggets/steel'])
+      e.recipes.createDeploying(inter,[inter,'#forge:nuggets/steel']),
+      e.recipes.createCutting(inter,inter)
   ]).transitionalItem(inter).loops(1)
   e.recipes.create.cutting('tgww:pneumatic_pistol_warhead','#forge:plates/copper')
   e.recipes.create.cutting('tgww:sub_caliber_ap_shell','#forge:plates/brass')

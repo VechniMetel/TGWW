@@ -1,0 +1,20 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input": {
+        "item": "ars_nouveau:magebloom_crop"
+    },
+    "render": {
+        "type": "crop",
+        "block": "ars_nouveau:magebloom_crop"
+    },
+    "results": [
+        {
+            "count": 1,
+            "item": "ars_nouveau:magebloom"
+        }
+    ],
+    "soil": {
+        "item": "minecraft:dirt"
+    },
+    "time": 2000
+}
